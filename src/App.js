@@ -66,10 +66,7 @@ const App = () => {
   };
 
   return (
-    <LoadScript
-      googleMapsApiKey="AIzaSyAx06IiRaZQ7CLnK26C1pU5uqg5z1SnxYo"
-      libraries={libraries}
-    >
+    <LoadScript googleMapsApiKey="" libraries={libraries}>
       <GoogleMap
         mapContainerStyle={{
           width: "100vw",
