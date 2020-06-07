@@ -66,7 +66,10 @@ const App = () => {
   };
 
   return (
-    <LoadScript googleMapsApiKey="" libraries={libraries}>
+    <LoadScript
+      googleMapsApiKey="AIzaSyAx06IiRaZQ7CLnK26C1pU5uqg5z1SnxYo"
+      libraries={libraries}
+    >
       <GoogleMap
         mapContainerStyle={{
           width: "100vw",
@@ -124,7 +127,9 @@ const App = () => {
                 padding: 15,
               }}
             >
-              <h1>{checkPos().getProperty("name")}</h1>
+              <h1>
+                {checkPos() ? checkPos().getProperty("name") : "Not found"}
+              </h1>
             </div>
           </InfoWindow>
         ) : null}
